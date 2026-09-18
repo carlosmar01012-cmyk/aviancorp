@@ -1,4 +1,4 @@
- /* =====================================================
+  /* =====================================================
    CONFIGURACIÓN GENERAL
 ===================================================== */
  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
@@ -6499,5 +6499,1028 @@ button {
 
     .modal-ruta-cerrar {
         width: 100%;
+    }
+}
+/* AVIÓN DEL LOGO - SIN EMOJI */
+
+.marca-logo .icono-avion {
+    width: 31px;
+    height: 31px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marca-logo .icono-avion svg {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    fill: #f2c93d;
+
+    transform: rotate(-12deg);
+}
+/* =====================================================
+   AJUSTE FINAL HEADER MÓVIL
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* HEADER */
+    .header {
+        width: 100%;
+        min-height: 108px;
+
+        padding: 18px 16px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 10px;
+    }
+
+
+    /* MARCA IZQUIERDA */
+    .marca {
+        flex: 1;
+        min-width: 0;
+
+        display: flex;
+        align-items: center;
+
+        gap: 12px;
+    }
+
+
+    /* CUADRO DEL AVIÓN */
+    .marca-logo {
+        width: 58px;
+        height: 58px;
+        flex: 0 0 58px;
+
+        border-radius: 16px;
+    }
+
+    .marca-logo .icono-avion {
+        width: 29px;
+        height: 29px;
+    }
+
+
+    /* TEXTOS */
+    .marca-info {
+        min-width: 0;
+    }
+
+    .marca-tipo {
+        display: block;
+
+        font-size: 10px;
+        line-height: 1.2;
+        letter-spacing: 1.3px;
+
+        white-space: nowrap;
+    }
+
+    .marca-info h2 {
+        margin-top: 4px;
+
+        font-size: 18px;
+        line-height: 1.05;
+
+        white-space: normal;
+    }
+
+    .marca-info p {
+        margin-top: 5px;
+
+        font-size: 10px;
+        line-height: 1.2;
+
+        white-space: nowrap;
+    }
+
+
+    /* LADO DERECHO */
+    .header-derecha {
+        margin-left: 0;
+
+        display: flex;
+        align-items: center;
+
+        gap: 7px;
+
+        flex: 0 0 auto;
+    }
+
+
+    /* MOSTRAMOS S.A.S. */
+    .empresa-sas {
+        display: flex;
+
+        width: 53px;
+        height: 34px;
+        flex: 0 0 53px;
+
+        font-size: 10px;
+    }
+
+
+    /* OCULTAMOS CONSULTAR DISPONIBILIDAD EN CELULAR */
+    .header-consultar {
+        display: none;
+    }
+
+
+    /* HAMBURGUESA */
+    .btn-menu {
+        width: 48px;
+        height: 48px;
+        flex: 0 0 48px;
+
+        border-radius: 12px;
+    }
+
+    .btn-menu span {
+        width: 23px;
+    }
+/* FORZAR HEADER COMPACTO EN MÓVIL */
+
+.header {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.marca {
+    width: calc(100% - 105px);
+    flex: 0 1 auto;
+}
+
+.marca-info {
+    flex: 1;
+    overflow: hidden;
+}
+
+.marca-info h2 {
+    font-size: 16px;
+    line-height: 1.08;
+    white-space: normal;
+}
+
+.header-derecha {
+    display: flex !important;
+    flex: 0 0 auto;
+}
+
+.header-consultar {
+    display: none !important;
+}
+
+.empresa-sas {
+    display: flex !important;
+}
+
+.btn-menu {
+    display: flex !important;
+}
+}
+/* =====================================================
+   AJUSTE FINAL HERO MÓVIL
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* HERO */
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-contenido {
+        width: 100%;
+        max-width: 430px;
+
+        margin: 0 auto;
+        padding: 55px 20px 45px;
+
+        text-align: center;
+    }
+
+
+    /* ETIQUETA SUPERIOR */
+    .hero-etiqueta {
+        margin: 0 auto 38px;
+
+        width: fit-content;
+        max-width: 100%;
+
+        padding: 11px 18px;
+
+        font-size: 11px;
+        letter-spacing: 1.3px;
+    }
+
+
+    /* NOMBRE EMPRESA SOBRE EL TÍTULO */
+    .hero-empresa {
+        margin-bottom: 10px;
+
+        font-size: 15px;
+        line-height: 1.25;
+        letter-spacing: .5px;
+
+        text-align: center;
+    }
+
+
+    /* TÍTULO PRINCIPAL */
+    .hero-contenido h1 {
+        margin: 0 auto;
+
+        max-width: 390px;
+
+        font-size: 39px;
+        line-height: 1.02;
+
+        text-align: center;
+    }
+
+
+    /* PARTE DORADA */
+    .hero-contenido h1 .dorado,
+    .hero-contenido h1 span {
+        line-height: 1.04;
+    }
+
+
+    /* DESCRIPCIÓN */
+    .hero-descripcion {
+        max-width: 390px;
+
+        margin: 34px auto 0;
+
+        font-size: 16px;
+        line-height: 1.55;
+
+        text-align: center;
+    }
+
+
+    /* UBICACIÓN */
+    .hero-ubicacion {
+        width: 100%;
+        max-width: 390px;
+
+        margin: 30px auto 0;
+
+        padding: 14px 17px;
+
+        font-size: 14px;
+        line-height: 1.35;
+    }
+
+
+    /* BOTONES */
+    .hero-acciones {
+        width: 100%;
+        max-width: 330px;
+
+        margin: 34px auto 0;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+    .hero-acciones a {
+        width: 100%;
+        min-height: 55px;
+
+        margin: 0;
+
+        font-size: 16px;
+    }
+
+}
+/* =====================================================
+   AJUSTE FINAL TARJETA GESTIÓN - MÓVIL
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .resumen-servicios {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .tarjeta-gestion {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+
+        border-radius: 25px;
+        overflow: visible;
+    }
+
+    /* FOTO MÁS COMPACTA */
+    .gestion-foto {
+        height: 285px !important;
+        border-radius: 25px 25px 0 0;
+        overflow: hidden;
+    }
+
+    .gestion-foto img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+
+        display: block;
+    }
+
+    /* PARTE INFERIOR */
+    .gestion-informacion {
+        padding: 30px 24px 26px !important;
+    }
+
+    .gestion-principal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 15px;
+    }
+
+    .gestion-titulos > span {
+        font-size: 11px;
+        margin-bottom: 7px;
+    }
+
+    .gestion-titulos h2 {
+        font-size: 18px;
+        line-height: 1.25;
+    }
+
+    /* ASESORÍA DIRECTA */
+    .gestion-badge {
+        min-width: 112px;
+        padding: 9px 12px;
+
+        border-radius: 999px;
+
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    /* LÍNEA */
+    .gestion-linea {
+        margin: 22px 0 17px;
+    }
+
+    /* NIT + PASTO */
+    .gestion-datos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 12px;
+    }
+
+    .gestion-dato {
+        gap: 7px;
+    }
+
+    .gestion-dato p {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .dato-icono {
+        font-size: 16px;
+    }
+
+    /* BURBUJA */
+    .burbuja-unicentro {
+        left: -10px;
+        bottom: -24px;
+
+        width: 280px;
+        min-height: 58px;
+
+        padding: 9px 13px;
+
+        border-radius: 18px;
+    }
+
+    .burbuja-icono {
+        width: 36px;
+        height: 36px;
+        flex: 0 0 36px;
+    }
+
+    .burbuja-texto strong {
+        font-size: 12px;
+    }
+
+    .burbuja-texto small {
+        font-size: 9px;
+    }
+}
+/* =====================================================
+   AJUSTE FINAL CONSULTA DE VUELOS - MÓVIL
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .consulta-vuelos {
+        padding: 42px 15px 55px;
+    }
+
+    .consulta-contenedor {
+        width: 100%;
+        max-width: 400px;
+
+        margin: 0 auto;
+        padding: 28px 23px 28px;
+
+        border-radius: 24px;
+    }
+
+
+    /* PARTE SUPERIOR */
+    .consulta-superior {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 22px;
+    }
+
+    .consulta-tipo {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+
+        gap: 12px;
+    }
+
+    .consulta-tipo > span {
+        flex: 0 0 auto;
+
+        font-size: 11px;
+        line-height: 1.2;
+    }
+
+
+    /* IDA Y VUELTA / SOLO IDA */
+    .consulta-selector {
+        display: flex;
+
+        padding: 4px;
+
+        border-radius: 999px;
+    }
+
+    .consulta-opcion {
+        min-height: 34px;
+
+        padding: 7px 14px;
+
+        font-size: 11px;
+        line-height: 1;
+
+        border-radius: 999px;
+    }
+
+
+    /* ASESORÍA */
+    .consulta-asesoria {
+        margin: 0;
+
+        font-size: 11px;
+        line-height: 1.3;
+
+        text-align: left;
+    }
+
+
+    /* SEPARADOR */
+    .consulta-linea {
+        margin: 18px 0 25px;
+    }
+
+
+    /* CAMPOS EN UNA COLUMNA */
+    .consulta-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .consulta-campo {
+        width: 100%;
+    }
+
+    .consulta-campo label {
+        display: block;
+
+        margin-bottom: 8px;
+
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+
+    /* SELECTS E INPUTS */
+    .consulta-campo select,
+    .consulta-campo input {
+        width: 100%;
+        height: 50px;
+
+        padding: 0 16px;
+
+        border-radius: 12px;
+
+        font-size: 13px;
+    }
+
+
+    /* BOTÓN CONSULTAR */
+    .consulta-boton {
+        width: 100%;
+        height: 52px;
+
+        margin-top: 2px;
+
+        border-radius: 12px;
+
+        font-size: 13px;
+    }
+
+    .consulta-lupa {
+        font-size: 17px;
+    }
+}
+/* =====================================================
+   CORRECCIÓN PARTE SUPERIOR DEL FORMULARIO EN MÓVIL
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .consulta-vuelos {
+        padding-top: 55px !important;
+    }
+
+    .consulta-contenedor {
+        padding-top: 32px !important;
+        overflow: visible;
+    }
+
+    .consulta-superior {
+        position: relative;
+        z-index: 2;
+
+        width: 100%;
+        margin-top: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+        gap: 20px;
+    }
+
+    .consulta-tipo {
+        width: 100%;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start;
+
+        gap: 12px;
+    }
+
+    .consulta-tipo > span {
+        display: block !important;
+        flex: 0 0 auto;
+
+        font-size: 11px;
+        line-height: 1.2;
+    }
+
+    .consulta-selector {
+        display: flex !important;
+        align-items: center;
+
+        padding: 4px;
+
+        border-radius: 999px;
+    }
+
+    .consulta-opcion {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 34px;
+        padding: 7px 13px;
+
+        font-size: 11px;
+    }
+}
+/* =====================================================
+   FORMULARIO MÓVIL - AJUSTE COMPACTO FINAL
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* SECCIÓN */
+    .consulta-vuelos {
+        padding: 38px 15px 50px !important;
+    }
+
+    /* CAJA PRINCIPAL */
+    .consulta-contenedor {
+        width: 100%;
+        max-width: 400px;
+
+        margin: 0 auto;
+        padding: 28px 23px 24px !important;
+
+        overflow: visible !important;
+    }
+
+    /* PARTE SUPERIOR */
+    .consulta-superior {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+        gap: 18px !important;
+    }
+
+    /* TIPO DE CONSULTA */
+    .consulta-tipo {
+        width: 100%;
+
+        display: flex !important;
+        align-items: center !important;
+
+        gap: 10px !important;
+    }
+
+    .consulta-tipo > span {
+        display: block !important;
+
+        font-size: 11px !important;
+        line-height: 1.15;
+    }
+
+    /* BOTONES IDA / SOLO IDA */
+    .consulta-selector {
+        display: flex !important;
+
+        padding: 3px !important;
+
+        border-radius: 999px;
+    }
+
+    .consulta-opcion {
+        min-height: 32px !important;
+
+        padding: 6px 13px !important;
+
+        font-size: 11px !important;
+        line-height: 1 !important;
+    }
+
+    /* ASESORÍA */
+    .consulta-asesoria {
+        margin: 0 !important;
+
+        font-size: 11px !important;
+        line-height: 1.25;
+    }
+
+    /* LÍNEA */
+    .consulta-linea {
+        margin: 17px 0 22px !important;
+    }
+
+    /* CAMPOS */
+    .consulta-grid {
+        gap: 14px !important;
+    }
+
+    .consulta-campo label {
+        margin-bottom: 6px !important;
+
+        font-size: 11px !important;
+    }
+
+    /* CAJAS BLANCAS */
+    .consulta-campo select,
+    .consulta-campo input {
+        height: 46px !important;
+
+        padding: 0 14px !important;
+
+        border-radius: 11px !important;
+
+        font-size: 12px !important;
+    }
+
+    /* BOTÓN CONSULTAR */
+    .consulta-boton {
+        height: 48px !important;
+
+        margin-top: 2px !important;
+
+        border-radius: 11px !important;
+
+        font-size: 12px !important;
+    }
+} 
+/* OCULTAR dd/mm/aaaa CUANDO NO HAY FECHA */
+
+#nuevaSalida:not(:focus):not(.fecha-elegida)::-webkit-datetime-edit,
+#nuevoRegreso:not(:focus):not(.fecha-elegida)::-webkit-datetime-edit {
+    color: transparent;
+}
+/* =========================================
+   DESTINOS - AJUSTE MÓVIL COMPACTO
+========================================= */
+
+@media (max-width: 600px) {
+
+    .destinos-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .destino-card {
+        border-radius: 25px;
+    }
+
+    /* FOTO */
+    .destino-imagen {
+        height: 255px;
+    }
+
+    /* ETIQUETA SUPERIOR */
+    .destino-tipo {
+        top: 16px;
+        left: 16px;
+        padding: 6px 13px;
+        font-size: 12px;
+    }
+
+    /* UBICACIÓN SOBRE LA FOTO */
+    .destino-ubicacion {
+        left: 16px;
+        bottom: 15px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    /* PARTE INFERIOR */
+    .destino-info {
+        min-height: 0;
+        padding: 24px 24px 18px;
+    }
+
+    .destino-info h3 {
+        margin-bottom: 9px;
+        font-size: 22px;
+        line-height: 1.15;
+    }
+
+    .destino-info p {
+        min-height: 0;
+        font-size: 13px;
+        line-height: 1.55;
+    }
+}
+/* =========================================
+   4 TARJETAS SERVICIOS - AJUSTE FINAL
+========================================= */
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.servicio-card {
+    padding: 32px 28px;
+    text-align: center;
+    border: 1px solid #24364b;
+    border-radius: 22px;
+    background: #07172a;
+}
+
+.servicio-icono {
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(226, 185, 47, .4);
+    border-radius: 18px;
+
+    background: rgba(226, 185, 47, .07);
+    color: #f4c72f;
+
+    font-size: 28px;
+    line-height: 1;
+}
+
+.servicio-card h3 {
+    margin: 0 0 18px;
+    color: #fff;
+
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.servicio-card p {
+    margin: 0 auto;
+    max-width: 440px;
+
+    color: #d3dae5;
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+
+/* MÓVIL */
+@media (max-width: 600px) {
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .servicio-card {
+        min-height: 0;
+        padding: 25px 20px 26px;
+        text-align: center;
+    }
+
+    .servicio-icono {
+        width: 58px;
+        height: 58px;
+        margin: 0 auto 20px;
+        border-radius: 15px;
+        font-size: 24px;
+    }
+
+    .servicio-card h3 {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .servicio-card p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+.servicio-icono svg {
+    width: 28px;
+    height: 28px;
+    fill: none;
+    stroke: #f4c72f;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+/* ==================================================
+   FORMULARIO FINAL - AJUSTE MÓVIL
+   REFERENCIA ORIGINAL
+================================================== */
+
+@media (max-width: 600px) {
+
+    /* CONTENEDOR GENERAL */
+    .solicitud-asesoria {
+        padding: 30px 16px 45px;
+    }
+
+    /* CAJA DEL FORMULARIO */
+    .solicitud-contenedor {
+        width: 100%;
+        max-width: 470px;
+        margin: 0 auto;
+        padding: 30px 24px 32px;
+        box-sizing: border-box;
+        border-radius: 26px;
+    }
+
+    /* AVISO PROCESO TRANSPARENTE */
+    .solicitud-aviso {
+        margin: 0 0 38px;
+        padding: 18px 20px;
+        border-radius: 22px;
+    }
+
+    .solicitud-aviso p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* ESPACIO ENTRE CAMPOS */
+    .solicitud-formulario {
+        gap: 0;
+    }
+
+    .solicitud-campo {
+        margin-bottom: 24px;
+    }
+
+    /* LABELS */
+    .solicitud-campo label {
+        display: block;
+        margin-bottom: 9px;
+        font-size: 14px;
+        line-height: 1.25;
+        font-weight: 700;
+    }
+
+    /* INPUTS Y SELECT */
+    .solicitud-campo input,
+    .solicitud-campo select {
+        width: 100%;
+        height: 58px;
+        min-height: 58px;
+        padding: 0 20px;
+        border-radius: 16px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    /* TEXTAREA */
+    .solicitud-campo textarea {
+        width: 100%;
+        height: 105px;
+        min-height: 105px;
+        padding: 17px 20px;
+        border-radius: 16px;
+        box-sizing: border-box;
+        font-size: 15px;
+        line-height: 1.45;
+        resize: none;
+    }
+
+    /* TÉRMINOS */
+    .solicitud-terminos {
+        margin: 5px 0 28px;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .solicitud-terminos input {
+        width: 15px;
+        height: 15px;
+        min-width: 15px;
+        margin-top: 4px;
+    }
+
+    .solicitud-terminos label {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    /* BOTÓN AMARILLO */
+    .solicitud-boton {
+        width: 100%;
+        min-height: 56px;
+        padding: 12px 18px;
+        border-radius: 15px;
+
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    /* TEXTO INFERIOR */
+    .solicitud-nota,
+    .solicitud-pie {
+        margin-top: 25px;
+        font-size: 12px;
+        line-height: 1.45;
+        text-align: center;
     }
 }
