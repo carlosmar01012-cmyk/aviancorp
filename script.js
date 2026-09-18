@@ -1,5 +1,4 @@
- 
-// ==========================================
+ // ==========================================
 // MENÚ PRINCIPAL
 // ==========================================
 
@@ -213,5 +212,13 @@ modalRuta.addEventListener("click", (e) => {
 modalSolicitarCotizacion.addEventListener("click", () => {
 
     cerrarConsultaRuta();
+
+});
+// Mostrar la fecha solamente después de seleccionarla
+[nuevaSalida, nuevoRegreso].forEach(campo => {
+
+    campo.addEventListener("change", () => {
+        campo.classList.toggle("fecha-elegida", campo.value !== "");
+    });
 
 });
